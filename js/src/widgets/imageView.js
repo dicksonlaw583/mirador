@@ -241,6 +241,23 @@
           osd.viewport.applyConstraints();
         }
       });
+      
+      this.element.find('.mirador-osd-rotate-ccw').on('click', function() {
+        var osd = _this.osd;
+        if ( osd.viewport ) {
+          var theta = parseInt(osd.viewport.getRotation());
+          osd.viewport.setRotation(theta - 90);
+          osd.viewport.applyConstraints();
+        }
+      });
+      this.element.find('.mirador-osd-rotate-cw').on('click', function() {
+        var osd = _this.osd;
+        if ( osd.viewport ) {
+          var theta = parseInt(osd.viewport.getRotation());
+          osd.viewport.setRotation(theta + 90);
+          osd.viewport.applyConstraints();
+        }
+      });
 
       this.element.find('.mirador-osd-toggle-bottom-panel').on('click', function() {
         _this.eventEmitter.publish('TOGGLE_BOTTOM_PANEL_VISIBILITY.' + _this.windowId);

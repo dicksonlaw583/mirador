@@ -1155,6 +1155,18 @@ li.highlight {
   right:70px;
   top:30px;
 }
+.mirador-osd-rotate-ccw {
+  font-size:130%;
+  position:absolute;
+  right: 100px;
+  top:5px;
+}
+.mirador-osd-rotate-cw {
+  font-size:130%;
+  position:absolute;
+  right: 100px;
+  top:30px;
+}
 .mirador-osd-go-home {
   position: absolute;
   right:20px;
